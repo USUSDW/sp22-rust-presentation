@@ -1,3 +1,4 @@
+/// This demonstrates how moves work with function parameters and returns
 fn main() {
     // gives_ownership moves its return
     // value into s1
