@@ -1,44 +1,26 @@
 #include <iostream>
 #include <string>
 
-template <typename T>
-struct NamedPointer {
-    std::string name;
-    T* pointer;
-
-    NamedPointer(std::string name, T* pointer):
-        name(name), pointer(pointer) {}
-};
-
-template <typename T>
-void printPointer(const NamedPointer<T> namedPointer);
+void printIntPointer(const std::string name, int* pointer);
 
 int main() {
-    const auto foo = NamedPointer<int>(std::string("foo"), new int(22));
-    printPointer(foo);
+    const auto foo = new int(22);
+    printIntPointer("foo", foo);
 
-    *foo.pointer = 87;
-    printPointer(foo);
+    *foo = 87;
+    printIntPointer("foo", foo);
 
-    delete foo.pointer;
-    printPointer(foo);
+    // the following commented out lines produce a compile error
+    // foo = new int(102);
+    // printIntPointer("foo", foo);
+
+    delete foo;
+    printIntPointer("foo", foo);
 
     return 0;
 }
 
-void intPointerDemo() {
-    const auto foo = NamedPointer<int>(std::string("foo"), new int(22));
-    printPointer(foo);
-
-    *foo.pointer = 87;
-    printPointer(foo);
-
-    delete foo.pointer;
-    printPointer(foo);
-}
-
-template <typename T>
-void printPointer(const NamedPointer<T> namedPointer) {
-    std::cout << namedPointer.name << " (pointer): " << namedPointer.pointer  << std::endl;
-    std::cout << namedPointer.name << " (value)  : " << *namedPointer.pointer << std::endl;
+void printIntPointer(const std::string name, const int* pointer) {
+    std::cout << name << " (pointer): " << pointer  << std::endl;
+    std::cout << name << " (value)  : " << *pointer << std::endl;
 }
