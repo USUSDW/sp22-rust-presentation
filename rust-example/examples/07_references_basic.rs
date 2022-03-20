@@ -12,3 +12,5 @@ fn calculate_length(s: &String) -> usize {
     s.len()
 } // Here, s goes out of scope. But because it does not have ownership of what
   // it refers to, nothing happens.
+
+// https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html

@@ -13,3 +13,5 @@ fn dangle() -> &String {
     &s
 } // Here, s goes out of scope, and is dropped. Its memory goes away.
   // Danger!
+
+// https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html

@@ -38,3 +38,5 @@ fn takes_and_gives_back(a_string: String) -> String {
     // a_string is returned and moves out to the calling function
     a_string
 }
+
+// https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html

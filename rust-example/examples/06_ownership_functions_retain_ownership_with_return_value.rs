@@ -13,3 +13,5 @@ fn calculate_length(s: String) -> (String, usize) {
 
     (s, length)
 }
+
+// https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html

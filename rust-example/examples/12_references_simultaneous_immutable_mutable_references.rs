@@ -9,3 +9,5 @@ fn main() {
 
     println!("{}, {}, and {}", r1, r2, r3);
 }
+
+// https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html

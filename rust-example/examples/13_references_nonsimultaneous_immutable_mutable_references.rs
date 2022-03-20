@@ -10,3 +10,5 @@ fn main() {
     let r3 = &mut s; // no problem
     println!("{}", r3);
 }
+
+// https://doc.rust-lang.org/book/ch04-02-references-and-borrowing.html

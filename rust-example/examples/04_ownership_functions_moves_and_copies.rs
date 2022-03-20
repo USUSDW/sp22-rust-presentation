@@ -29,3 +29,5 @@ fn makes_copy(some_integer: i32) {
     // some_integer comes into scope
     println!("makes_copy | {}", some_integer);
 } // Here, some_integer goes out of scope. Nothing special happens.
+
+// https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html

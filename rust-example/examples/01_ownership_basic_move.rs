@@ -8,3 +8,5 @@ fn main() {
     println!("using s1: {}, world!", s1);
     println!("using s2: {}, world!", s2);
 }
+
+// https://doc.rust-lang.org/book/ch04-01-what-is-ownership.html
