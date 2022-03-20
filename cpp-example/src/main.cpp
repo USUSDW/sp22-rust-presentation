@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 
-void printIntPointer(const std::string name, int* pointer);
+void printIntPointer(const std::string name, const int* pointer);
 
 /// This demonstrates that C++ still allows you to access invalid memory
 int main() {
