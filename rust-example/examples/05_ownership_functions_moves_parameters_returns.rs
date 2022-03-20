@@ -1,4 +1,4 @@
-/// This demonstrates how moves work with function parameters and returns.
+/// This demonstrates how moves work with function parameters and returns
 fn main() {
     // gives_ownership moves its return
     // value into s1
@@ -33,7 +33,7 @@ fn gives_ownership() -> String {
 // This function takes a String and returns one
 fn takes_and_gives_back(a_string: String) -> String {
     // a_string comes into scope
-    println!("gives_ownership | {}", a_string);
+    println!("takes_and_gives_back | {}", a_string);
 
     // a_string is returned and moves out to the calling function
     a_string

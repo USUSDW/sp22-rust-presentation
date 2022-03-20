@@ -1,12 +1,15 @@
+/// This demonstrates that you can't keep a reference to invalid memory
+/// DOES NOT COMPILE
 fn main() {
     let reference_to_nothing = dangle();
 }
 
+// dangle returns a reference to a String
 fn dangle() -> &String {
-    // dangle returns a reference to a String
+    // s is a new String
+    let s = String::from("hello");
 
-    let s = String::from("hello"); // s is a new String
-
-    &s // we return a reference to the String, s
+    // we return a reference to the String, s
+    &s
 } // Here, s goes out of scope, and is dropped. Its memory goes away.
   // Danger!

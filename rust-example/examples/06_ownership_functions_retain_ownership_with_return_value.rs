@@ -1,4 +1,4 @@
-/// This demonstrates how you can keep ownership and get a return value without using references.
+/// This demonstrates how you can keep ownership and get a return value without using references
 fn main() {
     let s1 = String::from("hello");
 

@@ -1,4 +1,4 @@
-/// This demonstrates that Rust considers dropped memory invalid.
+/// This demonstrates that Rust considers dropped memory invalid
 fn main() {
     let my_int = 22;
     println!("my_int: {}", my_int);
@@ -10,5 +10,5 @@ fn main() {
     // drop my_int early
     drop(my_int);
     // the following commented out line produces a compile error (dropped memory)
-    println!("my_int: {:?}", my_int);
+    // println!("my_int: {:?}", my_int);
 }

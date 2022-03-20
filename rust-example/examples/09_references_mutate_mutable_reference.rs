@@ -1,3 +1,4 @@
+/// This demonstrates how to create and use mutable references
 fn main() {
     let mut s = String::from("hello");
     println!("s before change: {}", s);

@@ -1,3 +1,4 @@
+/// This demonstrates that you can retain ownership and still use values in other scopes with references
 fn main() {
     let s1 = String::from("hello");
 

@@ -1,3 +1,4 @@
+/// This demonstrates that you can have immutable and mutable references if they aren't used at the same time
 fn main() {
     let mut s = String::from("hello");
 

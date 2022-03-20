@@ -1,3 +1,5 @@
+/// This demonstrates that you can't have immutable and mutable references simultaneously
+/// DOES NOT COMPILE
 fn main() {
     let mut s = String::from("hello");
 

@@ -1,4 +1,4 @@
-/// This demonstrates how moves and copies work with function parameters.
+/// This demonstrates how moves and copies work with function parameters
 fn main() {
     // s comes into scope
     let s = String::from("hello");

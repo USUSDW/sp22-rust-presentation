@@ -1,3 +1,4 @@
+/// This demonstrates that you can have multiple mutable references as long as they're usage doesn't overlap
 fn main() {
     let mut s = String::from("hello");
     println!("s: {}", s);
