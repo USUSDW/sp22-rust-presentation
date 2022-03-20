@@ -1,4 +1,5 @@
-/// This demonstrates that memory is invalid after it is moved
+/// This demonstrates that memory is invalid after it is moved.
+/// Does not compile.
 fn main() {
     let s1 = String::from("hello");
     let _s2 = s1; // underscore to ignore unused variable warning
