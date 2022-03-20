@@ -3,6 +3,7 @@
 
 void printIntPointer(const std::string name, int* pointer);
 
+/// This demonstrates that C++ still allows you to access invalid memory
 int main() {
     const auto foo = new int(22);
     printIntPointer("foo", foo);
