@@ -1,6 +1,6 @@
 # Rust
 
-Rust is a language designed with memory safety in mind.
+Rust is a language designed with memory safety in mind, along with a bunch of cool features like pattern matching, a trait system, and type-encoded error handling. This repo will focus on the ownership system of Rust.
 
 Links:
 * [Rust Homepage](https://www.rust-lang.org/)
